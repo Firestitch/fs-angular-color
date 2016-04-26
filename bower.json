@@ -1,0 +1,20 @@
+{
+  "name": "fs-angular-color", 
+  "description": "",
+  "main": [
+    "dist/color.js",
+    "dist/color.css"
+  ],
+  "dependencies": {
+    "md-color-picker": "~0.2.6"
+  },
+  "authors": [
+    "Firestitch Inc."
+  ],
+  "license": "MIT",
+  "ignore": [
+    "src",
+    ".gitignore"
+  ],
+  "private": false
+}

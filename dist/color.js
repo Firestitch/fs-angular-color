@@ -15,7 +15,7 @@
             },
 
             link: function($scope, element, attrs, ctrl) {
-   
+
                 $scope.options = $scope.options || {};
                 angular.extend($scope.options,{ label: $scope.label,
                                                 preserveScope: true,
@@ -30,3 +30,11 @@
     });
 })();
 
+angular.module('fs-angular-color').run(['$templateCache', function($templateCache) {
+  'use strict';
+
+  $templateCache.put('views/directives/namespace.html',
+    "<md-tabs md-selected=\"selected\" md-no-pagination md-enable-disconnect md-border-bottom><md-tab ng-repeat=\"item in items\" ng-click=\"redirect(item.path); $event.preventDefault();\">{{item.name}}</md-tab></md-tabs>"
+  );
+
+}]);

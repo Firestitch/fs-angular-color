@@ -14,7 +14,7 @@
             },
 
             link: function($scope, element, attrs, ctrl) {
-   
+
                 $scope.options = $scope.options || {};
                 angular.extend($scope.options,{ label: $scope.label,
                                                 preserveScope: true,
